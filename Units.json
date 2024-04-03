@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Builder",
+        "unitType": "Civilian",
+        "movement": 2,
+        "cost": 50,
+        "hurryCostModifier": -15,
+        "uniques": [
+            // "Can build [Land] improvements on tiles",
+            "Can instantly construct a [Class.Improvement] improvement <[3] times> <after which this unit is consumed> <when below [1] [Resource.BuilderChargeAuxiliary]>",
+            "Can instantly construct a [Class.Improvement] improvement <[4] times> <after which this unit is consumed> <when above [0] [Resource.BuilderChargeAuxiliary]> <when below [2] [Resource.BuilderChargeAuxiliary]> <hidden from users>",
+            "Can instantly construct a [Class.Improvement] improvement <[5] times> <after which this unit is consumed> <when above [1] [Resource.BuilderChargeAuxiliary]> <when below [3] [Resource.BuilderChargeAuxiliary]> <hidden from users>",
+            "Can instantly construct a [Class.Improvement] improvement <[6] times> <after which this unit is consumed> <when above [2] [Resource.BuilderChargeAuxiliary]> <when below [4] [Resource.BuilderChargeAuxiliary]> <hidden from users>",
+            "Class.Unit.Builder"
+        ]
+    },
+    {
+        "name": "Settler",
+        "unitType": "Civilian",
+        "movement": 2,
+        "cost": 80,
+        "uniques": [
+            "Founds a new city <by consuming this unit> <in tiles without [Natural Wonder]> <in tiles without [Mountain]> <in tiles without [Volcanic Soil]>",
+            "Cost increases by [30] per owned city",
+			"Requires at least [2] population",
+            "[+1] Sight",
+            "[-1] population [in this city] <in cities with at least [2] [Population]> <in cities without a [Governor.MagnusIB]>"
+        ]
+    },
+
+    // Scout
+    {
+        "name": "Unit.Scout",
+        "unitType": "UnitType.Recon",
+        "strength": 71, // 10
+        "movement": 3,
+        "cost": 30,
+        "hurryCostModifier": -33,
+        "attackSound": "nonmetalhit",
+        "uniques": [
+            "This Unit gains [10] XP <upon discovering a Natural Wonder>"
+        ]
+    },
+
+    // Melee
+    {
+        "name": "Warrior",
+        "unitType": "Melee",
+        "strength": 100, // 20
+        "movement": 2,
+        "cost": 40,
+        "hurryCostModifier": -33,
+        "upgradesTo": "Swordsman",
+        "obsoleteTech": "Tech.Gunpowder",
+        // "obsoleteTech": "Tech.IronWorking",
+        "attackSound": "nonmetalhit",
+        "uniques": []
+    },
+    {
+        "name": "Swordsman", 
+        "unitType": "Melee",
+        "strength": 193, // 35
+        "movement": 2,
+        "cost": 90,
+        "hurryCostModifier": -33,
+        "upgradesTo": "Man At Arms",
+        "requiredTech": "Tech.IronWorking",
+        "obsoleteTech": "Tech.ReplaceableParts",
+        "attackSound": "nonmetalhit",
+        "uniques": [
+            "Costs [20] [Iron]",
+            "Comment [Maintenance cost of 2]"
+        ]
+    },
+    {
+        "name": "Man At Arms",
+        "unitType": "Melee",
+        "strength": 288, // 45
+        "movement": 2,
+        "cost": 160,
+        "hurryCostModifier": -33,
+        "upgradesTo": "Musketman",
+        "requiredTech": "Tech.Apprenticeship",
+        "obsoleteTech": "Tech.ReplaceableParts",
+        "attackSound": "nonmetalhit",
+        "uniques": [
+            "Costs [20] [Iron]",
+            "Comment [Maintenance cost of 3]"
+        ]
+    },
+    {
+        "name": "Musketman",
+        "unitType": "Melee",
+        "strength": 430, // 55
+        "movement": 2,
+        "cost": 240,
+        "hurryCostModifier": -33,
+        "upgradesTo": "Line Infantry",
+        "requiredTech": "Tech.Gunpowder",
+        "obsoleteTech": "Tech.AdvancedBallistics",
+        "attackSound": "metalhit",
+        "uniques": [
+            "Costs [20] [Niter]",
+            "Comment [Maintenance cost of 4]"
+        ]
+    },
+    {
+        "name": "Infantry",
+        "unitType": "Melee",
+        "strength": 957, // 75
+        "movement": 2,
+        "cost": 430,
+        "hurryCostModifier": -33,
+        "requiredResource": "Oil",
+        "upgradesTo": "Mechanized Infantry",
+        "requiredTech": "Tech.ReplaceableParts",
+        "attackSound": "metalhit",
+        "uniques": [
+            "Costs [1] [Oil]",
+            "Comment [Maintenance cost of 6]"
+        ]
+    },
+    {
+        "name": "Mechanized Infantry",
+        "unitType": "Melee",
+        "strength": 1427, // 85
+        "movement": 3,
+        "cost": 650,
+        "hurryCostModifier": -33,
+        "requiredResource": "Oil",
+        "requiredTech": "Tech.Satellites",
+        "attackSound": "metalhit",
+        "uniques": [
+            "Costs [1] [Resource.Oil]",
+            "Comment [Maintenance cost of 8]"
+        ]
+    }
+]

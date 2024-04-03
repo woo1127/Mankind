@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land",
+        "uniques": []
+    },
+    {
+        "name": "Religious",
+        "movementType": "Land",
+        "uniques": [
+            "No defensive terrain bonus",
+            "No defensive terrain penalty"
+        ]
+    },
+    {
+        "name": "Recon",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Melee",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "[+25]% Strength <vs [UnitType.AntiCavalry] units>" // 5
+        ]
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "[-54]% Strength <vs [Water] units>", // -17
+            "[-54]% Strength <vs cities>" // -17
+        ]
+    },
+    {
+        "name": "Anti Cavalry",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "[+54]% Strength <vs [UnitType.LightCavalry] units>", // +10
+            "[+54]% Strength <vs [UnitType.HeavyCavalry] units>", // +10
+            "[+54]% Strength <vs [UnitType.RangedCavalry] units>" // +10
+        ]  
+    },
+    {
+        "name": "Heavy Cavalry",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "Ignores Zone of Control"
+        ]  
+    },
+    {
+        "name": "Light Cavalry",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "Ignores Zone of Control"
+        ]  
+    },
+    {
+        "name": "Ranged Cavalry",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]  
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land",
+        "uniques": [
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>",
+            "[-54]% Strength <vs [Land] units>" // -17
+        ]  
+    },
+    {
+        "name": "Naval Melee",
+        "movementType": "Water",
+        "uniques": [
+            "[+1] Movement <if [Wonder.GreatLighthouse] is constructed>",
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Naval Ranged",
+        "movementType": "Water",
+        "uniques": [
+            "[+1] Movement <if [Wonder.GreatLighthouse] is constructed>",
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Naval Raider",
+        "movementType": "Water",
+        "uniques": [
+            "[+1] Movement <if [Wonder.GreatLighthouse] is constructed>",
+            "Ignores Zone of Control",
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [UnitType.NavalRaider] units",
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Naval Carrier",
+        "movementType": "Water",
+        "uniques": [
+            "[+1] Movement <if [Wonder.GreatLighthouse] is constructed>",
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Air Fighter",
+        "movementType": "Air",
+        "uniques": [
+            "Can see over obstacles",
+            "Can perform Air Sweep",
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    },
+    {
+        "name": "Air Bomber",
+        "movementType": "Air",
+        "uniques": [
+            "Can see over obstacles",
+            "Can perform Air Sweep",
+            "[-54]% Strength <vs [Land] units>", // -17
+            "Heal this unit by [50] HP <for [All] units> <upon being promoted> <hidden from users>"
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Civic Tree",
+        "era": "Era.Ancient",
+        "policies": [
+            {
+                "name": "Civic.Code",
+                "row": 1,
+                "column": 7,
+                "uniques": [
+                    "Comment [Consumes 20 [Culture] (modified by game speed)]",
+                    "Only available <when above [20] [Culture] (modified by game speed)> <hidden from users>",
+                    "Gain [-20] [Culture] (modified by game speed) <hidden from users>",
+                    "Remove [Building.HidePolicy] [in capital] <hidden from users>",
+                    "Gain a free [Building.HidePolicy] [in capital] <upon turn end> <hidden from users>",
+                    "Remove [Building.HideGov] [in capital] <hidden from users>",
+                    "Gain a free [Building.HideGov] [in capital] <upon turn end> <hidden from users>"
+                ]
+            },
+            {
+				"name": "Civic Tree Complete",
+				"uniques": ["Triggers a Cultural Victory upon completion"]
+			}
+        ]
+    }
+]

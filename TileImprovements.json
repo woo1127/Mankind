@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Mine",
+        "terrainsCanBeBuiltOn": ["Hill", "Volcanic Soil"],
+        "techRequired": "Tech.Mining",
+        "production": 1,
+        "uniques": [
+            "[+1 Production] <after discovering [Tech.Apprenticeship]>",
+            "[+1 Production] <after discovering [Tech.Industrialization]>",
+            "[+1 Production] <after discovering [Tech.SmartMaterials]>",
+            "Pillaging this improvement yields approximately [+25 Gold]",
+            "Class.Improvement"
+        ]
+    },
+    {
+        "name": "Oil Well",
+        "techRequired": "Tech.Steel",
+        "production": 2,
+        "uniques": [
+            "Can only be built to improve a resource",
+			"[+1 Production] <after discovering [Tech.PredictiveSystems]>",
+			"Pillaging this improvement yields approximately [+30 Gold]",
+            "Class.Improvement"
+        ]
+    }
+]

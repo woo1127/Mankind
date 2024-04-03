@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Scientist",
+        "science": 0,
+        "color": [0, 0, 255]
+    },
+    {
+        "name": "Priest",
+        "faith": 0,
+        "color": [255, 255, 255]
+    },
+    {
+        "name": "Commander",
+        "production": 0,
+        "gold": 0,
+        "color": [128, 128, 128]
+    },
+    {
+        "name": "Captain",
+        "food": 0,
+        "gold": 0,
+        "color": [0, 0, 128]
+    },
+    {
+        "name": "Merchant",
+        "gold": 0,
+        "color": [255, 215, 0]
+    },
+    {
+        "name": "Engineer",
+        "production": 0,
+        "color": [139, 69, 19]
+    },
+    {
+        "name": "Artist",
+        "culture": 0,
+        "color": [160, 32, 240]
+    }
+]
